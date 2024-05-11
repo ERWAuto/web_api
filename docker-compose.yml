@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  fastapi:
+    container_name: fastapi
+    build:
+      context: .
+    env_file:
+      - .env
+    ports:
+      - 9943:8000

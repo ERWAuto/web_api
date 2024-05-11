@@ -8,9 +8,6 @@ class DatabaseConfig:
 
     @staticmethod
     def from_env() -> "DatabaseConfig":
-        uri = getenv(
-            "DATABASE_URI",
-            # db uri from import
-        )
+        uri = getenv("DATABASE_URI")
 
         return DatabaseConfig(uri)

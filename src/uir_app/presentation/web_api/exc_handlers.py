@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from starlette.types import ExceptionHandler
 
-from uir_app.domain.common.exceptions import DomainValidationError
+from src.uir_app.domain.common.exceptions import DomainValidationError
 
 
 async def domain_validation_handler(exc: DomainValidationError) -> JSONResponse:

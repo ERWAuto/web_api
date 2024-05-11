@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 
 from fastapi import APIRouter
 
-check_router = APIRouter(prefix="check", tags=["check"])
+check_router = APIRouter(prefix="/check", tags=["check"])
 
 
 @dataclass(frozen=True)

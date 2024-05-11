@@ -8,7 +8,7 @@ from sqlalchemy.ext.asyncio import (
     create_async_engine,
 )
 
-from uir_app.infrastructure.config import DatabaseConfig
+from src.uir_app.infrastructure.config import DatabaseConfig
 
 
 class SqlalchemyProvider(Provider):
